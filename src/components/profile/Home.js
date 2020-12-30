@@ -5,13 +5,12 @@ const Home = () => (
   <div className='row'>
     <div className='col-sm-10 col-md-8 mx-auto mt-5'>
       <img src={pic} className='pic' alt='A headshot of Andrew with a wooden fence and trees in the background' />
-      <h1>Welcome!</h1>
+      <h2>Welcome!</h2>
       <br/>
       <p>
-      This app has been created for aspiring young Chefs. Inspired by the developers son, Kidz Kitchen is designed and structured to help kids explore cooking and build confidence in their food skills.
-      Great job learning to and continuing to cook. We can smell the tasty treats you are all making.
+      Thanks so much for visiting my site. Please explore the navigation tabs above.
       </p>
-      <p>Already a Kidz Kitchen user? Welcome back!</p>
+      <p>If you have any questions use the contact me tab. I look forward to helping you make the world more accessible through coding.</p>
     </div>
   </div>
 )
