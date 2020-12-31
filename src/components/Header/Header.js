@@ -1,22 +1,23 @@
 import React, { Fragment } from 'react'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
 
-const alwaysOptions = (
-  <Fragment>
-    <Nav.Link to="/">Home</Nav.Link>
-  </Fragment>
-)
+import Home from '../profile/Home'
+import Projects from '../profile/Projects'
+import Skills from '../profile/Skills'
+import AboutMe from '../profile/AboutMe'
 
 const Header = () => (
-  <Navbar bg="primary" variant="dark" expand="md">
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav collapseOnSelect className="ml-auto">
-        { alwaysOptions }
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+  <Fragment>
+    <h1>Portfolio for Andrew Crook</h1>
+    <Tabs className='justify-content-center' variant="pills" defaultActiveKey="home">
+      <Tab eventKey="home" title="Home"><Home/></Tab>
+      <Tab eventKey="about" title="About Me"><AboutMe/></Tab>
+      <Tab eventKey="skills" title="Skills"><Skills/></Tab>
+      <Tab eventKey="projects" title="Projects"><Projects/></Tab>
+      <Tab eventKey="contact" title="Contact Me"></Tab>
+    </Tabs>
+  </Fragment>
 )
 
 export default Header
