@@ -3,9 +3,10 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 
 import Home from '../profile/Home'
-import Projects from '../profile/Projects'
-import Skills from '../profile/Skills'
 import AboutMe from '../profile/AboutMe'
+import Skills from '../profile/Skills'
+import Projects from '../profile/Projects'
+import Contact from '../profile/Contact'
 
 const Header = () => (
   <Fragment>
@@ -15,7 +16,7 @@ const Header = () => (
       <Tab eventKey="about" title="About Me"><AboutMe/></Tab>
       <Tab eventKey="skills" title="Skills"><Skills/></Tab>
       <Tab eventKey="projects" title="Projects"><Projects/></Tab>
-      <Tab eventKey="contact" title="Contact Me"></Tab>
+      <Tab eventKey="contact" title="Contact Me"><Contact/></Tab>
     </Tabs>
   </Fragment>
 )

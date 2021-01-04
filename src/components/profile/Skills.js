@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table'
 const Skills = () => (
   <div className='row'>
     <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+      <h2>My Skills</h2>
       <Table margin-left-auto margin-right-auto striped bordered hover>
         <thead>
           <tr><th>Programing Technologies</th><th>Accessibility Technologies</th></tr>
