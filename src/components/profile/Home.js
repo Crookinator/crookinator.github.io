@@ -9,7 +9,7 @@ const Home = () => (
       <br/>
       <p className='welcomeText'>
       Thanks so much for visiting my site. Please explore the navigation tabs above.
-      If you have any questions use the contact me tab. I look forward to helping you make the world more accessible through coding.
+      If you have any questions use the contact information found in the footer. I look forward to helping you make the world more accessible through coding.
       </p>
     </div>
   </div>
