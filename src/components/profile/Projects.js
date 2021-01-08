@@ -1,6 +1,9 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
+import batman from '../Batman Tic-Tac-Toe.png'
+import gdl from '../Guide Dog Log.png'
+
 const Projects = () => (
   <div className='row'>
     <div className='col-sm-10 col-md-8 mx-auto mt-5'>
@@ -9,7 +12,7 @@ const Projects = () => (
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src={batman}
             alt="Screenshot of Batman tic-tac-toe. The game board has the bat cave behind it and the colors are gray, black, and yellow."
           />
           <Carousel.Caption>
@@ -20,12 +23,12 @@ const Projects = () => (
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src={gdl}
             alt="A screenshot of the Guide Dog Log interface. The background is black with white text and a green header. "
           />
 
           <Carousel.Caption>
-            <h3>Social Media Idea</h3>
+            <h3>Guide Dog Log</h3>
             <p>My second project focuses more on solving a need. As a guide dog handler myself I found a need for a forum where guide dog handlers could share experiences. I built the client side and the api apps as well as included some helpful information to visitors to the site. This full stack app also requires user authentication.</p>
           </Carousel.Caption>
         </Carousel.Item>
