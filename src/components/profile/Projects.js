@@ -3,6 +3,10 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import batman from '../Batman Tic-Tac-Toe.png'
 import gdl from '../Guide Dog Log.png'
+import kkLight from '../Kidz-Kitchen-light.png'
+import kkDark from '../Kidz-Kitchen-dark.png'
+import scrumiDark from '../Scrumi-App-(dark).png'
+import scrumiLight from '../Scrumi-App-(light).png'
 
 const Projects = () => (
   <div className='row'>
@@ -35,7 +39,7 @@ const Projects = () => (
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            src={scrumiLight}
             alt="A screenshot of the scrumi app. The interface has a purple navigation bar at the top with a white body and black text."
           />
 
@@ -47,12 +51,35 @@ const Projects = () => (
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
-            alt="The dark mode version of Kidz Kitchen."
+            src={scrumiDark}
+            alt="A screenshot of the scrumi dark mode app. The interface has a purple navigation bar at the top with a black background and white text."
+          />
+
+          <Carousel.Caption>
+            <h3>Scrumi (dark mode)</h3>
+            <p>With this project I also integrated an @media query for when users have system wide dark mode enabled. When this is true the entire app interface changes to accomidate the users preference.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={kkLight}
+            alt="The find recipes view of Kidz Kitchen. The Navigation bar and main items have a very kid friendly orange color, while the background is white."
           />
           <Carousel.Caption>
             <h3>Kidz Kitchen</h3>
-            <p>My most recent project came about because my son is very into cooking right now and asked me to create an app where he could keep track of reipes as well as get recipe ideas. This app is also full stack, I used Python, Django, and PostgreSQL for the api. I used React with the client side application. I also connected to a third party api called recipe puppy for the recipe suggestions.</p>
+            <p>My most recent project came about because my son is very into cooking right now and asked me to create an app where he could keep track of recipes as well as get recipe ideas. This app is also full stack, and includes a dark mode version. I used Python, Django, and PostgreSQL to create the api. I used React for the client side application. I also connected to a third party api called recipe puppy for the recipe suggestions.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={kkDark}
+            alt="The find recipes view of Kidz Kitchen. This is the dark mode version so the background is black and the navigation bar and on screen items have a very dark gray background. All the text is white."
+          />
+          <Carousel.Caption>
+            <h3>Kidz Kitchen (dark mode)</h3>
+            <p>Knowing that my son chose a very jaring orange for the light mode version of the app. I strove to create a very muted UX for the dark mode. This dark mode is achieved the same as the Scrumi dark mode. I used an @media query to check to see if the user had system wide dark mode enabled.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>    </div>
