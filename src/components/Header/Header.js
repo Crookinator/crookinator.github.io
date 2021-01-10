@@ -9,7 +9,7 @@ import Projects from '../profile/Projects'
 
 const Header = () => (
   <Fragment>
-    <h1>Portfolio for Andrew Crook</h1>
+    <h1 className='title'>Andrew Crook</h1>
     <Tabs className='justify-content-center' variant="pills" defaultActiveKey="home">
       <Tab eventKey="home" title="Home"><Home/></Tab>
       <Tab eventKey="about" title="About Me"><AboutMe/></Tab>
