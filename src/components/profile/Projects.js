@@ -12,7 +12,7 @@ const Projects = () => (
   <div className='row'>
     <div className='col-sm-10 col-md-8 mx-auto mt-5'>
       <h2>My Projects</h2>
-      <Carousel interval={10000}>
+      <Carousel interval={false}>
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -62,7 +62,7 @@ const Projects = () => (
           <img
             className="d-block w-100"
             src={kkDark}
-            alt="The find recipes view of Kidz Kitchen. This is the dark mode version so the background is black and the navigation bar and on screen items have a very dark gray background. All the text is white."
+            alt="The dark mode version of the find recipes view of Kidz Kitchen. The background is black and the navigation bar and on screen items have a very dark gray background. All the text is white."
           />
           <h3><a href="https://crookinator.github.io/kidz-kitchen/#/" target='_blank' rel='noopener noreferrer'>Kidz Kitchen</a> (dark mode)</h3>
           <p className='carouselText'>Knowing that my son chose a very jaring orange for the light mode version of the app. I strove to create a very muted UX for the dark mode. This dark mode is achieved the same as the Scrumi dark mode. I used an @media query to check to see if the user had system wide dark mode enabled.</p>
